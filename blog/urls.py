@@ -3,7 +3,7 @@ from . import views
 from django.urls import path, re_path, include
 
 urlpatterns = [
-    url(r'^$', views.post_list),
+    url(r'^$', views.index),
     path('inicio/', views.index, name="index"),
     path('nosotros/', views.nosotros, name="nosotros"),
     path('donaciones/', views.donaciones, name="donaciones"),
